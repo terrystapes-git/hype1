@@ -412,3 +412,76 @@ ul.navigation {
    background: #505050;
    margin: 10px;
 }
+
+/* ---- Mobile & tablet responsive overrides ---- */
+
+@media (max-width: 768px) {
+  #drawer,
+  #treatmentDrawer,
+  #boluscalcDrawer {
+    font-size: 15px;
+  }
+
+  #treatmentDrawer .left-column span {
+    width: 100px;
+  }
+
+  #treatmentDrawer .left-column input,
+  #treatmentDrawer .left-column select {
+    width: 130px;
+  }
+}
+
+@media (max-width: 430px) {
+  #drawer button,
+  #treatmentDrawer button,
+  #boluscalcDrawer button {
+    font-size: 16px;
+    padding: 8px 10px;
+    min-height: 44px;
+  }
+
+  #buttonbar a,
+  #buttonbar i {
+    width: 38px;
+    min-height: 44px;
+    line-height: 44px;
+  }
+
+  form {
+    padding: 0 8px;
+  }
+
+  #treatmentDrawer .left-column {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 4px;
+  }
+
+  #treatmentDrawer .left-column span {
+    width: auto;
+    flex: 0 0 110px;
+  }
+
+  #treatmentDrawer .left-column input,
+  #treatmentDrawer .left-column select {
+    flex: 1 1 120px;
+    min-width: 100px;
+    width: auto;
+    box-sizing: border-box;
+  }
+
+  #treatmentDrawer #notes,
+  #treatmentDrawer #glucoseValue {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .navigation a {
+    padding: 10px 5px;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+  }
+}
